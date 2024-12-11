@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: black; /* Texte "Connexion" en noir */
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background-color: #545454;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #ff4d4d;
+        }
+
+        /* Style du bouton "Retour" */
+        .back-to-top {
+            position: fixed; /* Positionne le bouton de manière fixe */
+            top: 20px; /* Décale le bouton de 20px du haut */
+            right: 20px; /* Décale le bouton de 20px de la droite */
+            background-color: #ff4d4d; /* Fond rouge */
+            color: white; /* Texte blanc */
+            padding: 10px 20px; /* Espacement autour du texte */
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none; /* Supprime le soulignement */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Effet de transition */
+        }
+
+        .back-to-top:hover {
+            background-color: #ff1a1a; /* Change la couleur au survol */
+        }
+
+        /* Style du texte cliquable sous le bouton */
+        .signup-link {
+            margin-top: 15px;
+            font-size: 14px;
+            color: black; /* Changer la couleur du texte en noir */
+        }
+
+        .signup-link a {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bouton retour en haut à droite -->
+    <a href="index.html" class="back-to-top">Go Back</a>
+
+    <div class="login-container">
+        <h2>Connection</h2>
+        <form>
+            <input type="text" placeholder="User Name" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Log in</button>
+        </form>
+        
+        <!-- Texte cliquable sous le bouton de connexion -->
+        <div class="signup-link">
+            <p>No account yet ? <a href="signup.html">Create one here</a></p>
+        </div>
+    </div>
+</body>
+</html>

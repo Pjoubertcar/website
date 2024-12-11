@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bannière principale -->
+    <header class="banner">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/TCG.png" alt="Logo TCG" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="tarot.html">Tarot</a></li> <!-- Lien corrigé vers tarot.html -->
+                <li><a href="pokemon.html">Pokemon</a></li> <!-- Lien vers balatro.html -->
+                <li><a href="balatro.html">Balatro</a></li> <!-- Lien vers balatro.html -->
+            </ul>
+        </nav>
+        <div class="connexion-container">
+            <a href="login.html">
+                <img src="images/connexion.png" alt="Connexion" class="connexion">
+            </a>
+        </div>
+    </header>
+
+    <!-- Bande noire (Snowflake Package) -->
+    <section class="promo-banner">
+        <div class="promo-content">
+            <div class="promo-text">
+                <p class="title">SNOWFLAKE PACK</p>
+                <p class="price">30€ LIMITED QUANTITY</p>
+                <p class="details">5 Boosters Pokémon</p>
+                <p class="details">1 Christmas stocking</p>
+                <button class="buy-button" onclick="window.location.href='buy1.html'">Buy this pack!</button>
+            </div>
+            <img src="images/packflocon.png" alt="Pack Flocon" class="promo-image">
+        </div>
+    </section>
+
+    <!-- Bande blanche (Elf Pack) -->
+    <section class="promo-banner-white">
+        <div class="promo-content">
+            <div class="promo-text-white">
+                <p class="title">ELF PACK</p>
+                <p class="price">60€ LIMITED QUANTITY</p>
+                <p class="details">5 Jockers Holo</p>
+                <button class="buy-button" onclick="window.location.href='buy2.html'">Buy this pack!</button>
+            </div>
+            <img src="images/packelf.png" alt="Pack Elf" class="promo-image">
+        </div>
+    </section>
+
+    <!-- Bande dorée (Pack Premium Cold) -->
+    <section class="promo-banner-gold">
+        <div class="promo-content">
+            <div class="promo-card">
+                <p class="title">PREMIUM COLD PACK</p>
+                <p class="price">90€ LIMITED QUANTITY</p>
+                <p class="details">1 Deck box</p>
+                <p class="details">30 Standard Cards</p>
+                <p class="details">10 Foil Cards</p>
+                <p class="details">5 Golden Cards</p>
+                <button class="buy-button" onclick="window.location.href='buy3.html'">Buy this pack!</button>
+            </div>
+            <img src="images/tarot.png" alt="Pack Tarot" class="promo-image">
+        </div>
+    </section>
+</body>
+</html>

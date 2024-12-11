@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bannière de navigation -->
+    <header class="banner">
+        <div class="logo-container">
+            <!-- Ajout de la balise <a> pour rediriger vers index.html -->
+            <a href="index.html">
+                <img src="images/TCG.png" alt="Logo TCG" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="tarot.html">Tarot</a></li> <!-- Lien corrigé vers tarot.html -->
+                <li><a href="pokemon.html">Pokemon</a></li> <!-- Lien corrigé vers pokemon.html -->
+                <li><a href="balatro.html">Balatro</a></li> <!-- Lien vers balatro.html -->
+            </ul>
+        </nav>
+        <div class="connexion-container">
+            <a href="login.html">
+                <img src="images/connexion.png" alt="Connexion" class="connexion">
+            </a>
+        </div>
+    </header>
+
+    <!-- Bannière Pokemon -->
+    <header class="balatro-banner">
+        <img src="images/pokemon.png" alt="Balatro Banner" class="balatro-image">
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="balatro-content">
+        <h1>POKEDEX</h1>
+        <p>550 collectible cards from the most common to the most legendary rarity!</p>
+
+        <!-- Section de recherche -->
+        <section class="search-section">
+            <div class="search-form">
+                <div class="search-container">
+                    <button class="search-button">Research</button>
+                    <input type="text" class="search-input" placeholder="Tapez votre recherche...">
+                </div>
+                <!-- Trier par nouveauté -->
+                <div class="sort-section">
+                    <label for="sort" class="sort-label">Order by :</label>
+                    <select id="sort" class="sort-select">
+                        <option value="nouveaute">New</option>
+                        <option value="recent">Recently added</option>
+                        <option value="prix">Price</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
